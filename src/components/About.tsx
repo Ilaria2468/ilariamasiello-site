@@ -27,13 +27,10 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="text-lg text-gray-700 leading-relaxed">
-              Ciao! Sono [Nome], una professionista appassionata nel campo del beauty e del makeup.
-              Con [X] anni di esperienza, ho perfezionato le mie tecniche per garantire risultati 
-              che valorizzano la bellezza naturale di ogni cliente.
+            Ciao! Sono Ilaria, una professionista appassionata nel mondo del beauty. La mia missione è far sentire ogni persona speciale, creando look che esaltano la bellezza naturale e riflettono la loro unicità.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              La mia filosofia è semplice: ogni persona è unica e merita un trattamento personalizzato.
-              Mi impegno a creare look che rispecchiano la personalità e lo stile di chi si affida a me.
+            Amo combinare creatività, tecnica e attenzione ai dettagli per realizzare trucchi e acconciature che lasciano il segno, perfetti per ogni occasione. Per me, ogni cliente è una storia da raccontare attraverso il suo stile.
             </p>
           </motion.div>
 
@@ -44,14 +41,21 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="relative"
           >
-            <div className="aspect-square rounded-lg overflow-hidden shadow-xl">
-              <img 
-                src="/path-to-your-profile-image.jpg"
-                alt="Profile"
-                className="w-full h-full object-cover"
-              />
+            {/* Contenitore principale dell'immagine */}
+            <div className="relative">
+              {/* Immagine principale */}
+              <div className="aspect-[3/4] rounded-lg overflow-hidden shadow-xl">
+                <img 
+                  src="/images/ilariafoto.jpg"
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              
+              {/* Elementi decorativi */}
+              <div className="absolute -bottom-4 -right-4 w-48 h-48 bg-[#ea8f90]/10 rounded-full -z-10"></div>
+              <div className="absolute -top-4 -left-4 w-32 h-32 bg-[#ea8f90]/5 rounded-full -z-10"></div>
             </div>
-            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-[#ea8f90]/10 rounded-full -z-10"></div>
           </motion.div>
         </div>
       </div>

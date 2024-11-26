@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 
 const Services = () => {
   const services = [
-    { title: 'Makeup', description: 'Trucco personalizzato per ogni occasione' },
-    { title: 'Skincare', description: 'Trattamenti per la cura della pelle' },
-    { title: 'Consulenza', description: 'Consigli personalizzati per la tua routine' }
+    { title: 'Makeup', description: 'Trucco personalizzato per ogni occasione speciale' },
+    { title: 'Acconciature', description: 'Creazioni eleganti e personalizzate per eventi speciali' },
+    { title: 'Styling', description: 'Tagli moderni e pieghe perfette per ogni occasione' }
   ];
 
   return (

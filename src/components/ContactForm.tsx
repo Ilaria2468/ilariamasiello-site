@@ -47,17 +47,18 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto">
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+    <form onSubmit={handleSubmit(onSubmit)} className="max-w-2xl mx-auto p-8 bg-white rounded-lg shadow-lg border-2 border-[#ea8f90]/30">
+      <div className="space-y-6">
+        {/* Nome */}
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
             Nome
           </label>
           <input
-            id="name"
             type="text"
+            id="name"
             {...register('name', { required: 'Il nome è obbligatorio' })}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+            className="w-full px-4 py-2 border border-[#ea8f90]/30 rounded-md focus:ring-[#ea8f90] focus:border-[#ea8f90] transition-colors"
             disabled={isSubmitting}
           />
           {errors.name && (
@@ -65,13 +66,14 @@ const ContactForm = () => {
           )}
         </div>
 
+        {/* Email */}
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
             Email
           </label>
           <input
-            id="email"
             type="email"
+            id="email"
             {...register('email', {
               required: 'Email è obbligatoria',
               pattern: {
@@ -79,7 +81,7 @@ const ContactForm = () => {
                 message: 'Indirizzo email non valido',
               },
             })}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+            className="w-full px-4 py-2 border border-[#ea8f90]/30 rounded-md focus:ring-[#ea8f90] focus:border-[#ea8f90] transition-colors"
             disabled={isSubmitting}
           />
           {errors.email && (
@@ -87,14 +89,15 @@ const ContactForm = () => {
           )}
         </div>
 
+        {/* Servizio */}
         <div>
-          <label htmlFor="service" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-1">
             Servizio
           </label>
           <select
             id="service"
             {...register('service', { required: 'Seleziona un servizio' })}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+            className="w-full px-4 py-2 border border-[#ea8f90]/30 rounded-md focus:ring-[#ea8f90] focus:border-[#ea8f90] transition-colors"
             disabled={isSubmitting}
           >
             <option value="">Seleziona un servizio</option>
@@ -108,34 +111,37 @@ const ContactForm = () => {
           )}
         </div>
 
+        {/* Messaggio */}
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
             Messaggio
           </label>
           <textarea
             id="message"
             {...register('message')}
             rows={4}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+            className="w-full px-4 py-2 border border-[#ea8f90]/30 rounded-md focus:ring-[#ea8f90] focus:border-[#ea8f90] transition-colors resize-none"
             disabled={isSubmitting}
           />
         </div>
 
-        <button
-          type="submit"
-          disabled={isSubmitting}
-          className={`w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white 
-            ${isSubmitting ? 'bg-[#ea8f90]/70' : 'bg-[#ea8f90] hover:bg-[#ea8f90]/90'}`}
-        >
-          {isSubmitting ? (
-            <>
-              <Loader2 className="animate-spin -ml-1 mr-2 h-5 w-5" />
-              Invio in corso...
-            </>
-          ) : (
-            'Invia Messaggio'
-          )}
-        </button>
+        {/* Pulsante Submit */}
+        <div>
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="w-full bg-[#ea8f90] text-white py-3 px-6 rounded-md hover:bg-[#ea8f90]/90 transition-colors duration-200 font-medium flex justify-center items-center"
+          >
+            {isSubmitting ? (
+              <>
+                <Loader2 className="animate-spin -ml-1 mr-2 h-5 w-5" />
+                Invio in corso...
+              </>
+            ) : (
+              'Invia Messaggio'
+            )}
+          </button>
+        </div>
 
         {submitStatus === 'success' && (
           <div className="mt-2 text-sm text-green-600">
@@ -148,8 +154,8 @@ const ContactForm = () => {
             Si è verificato un errore. Riprova più tardi.
           </div>
         )}
-      </form>
-    </div>
+      </div>
+    </form>
   );
 };
 
