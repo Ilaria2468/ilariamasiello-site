@@ -18,7 +18,7 @@ const Home = () => {
       <Services />
       
       {/* Contact Form Section */}
-      <section id="contact" className="py-20 bg-white">
+      <section id="contact" className="py-20 bg-[#ea8f90]/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             className="text-center mb-16"
@@ -27,7 +27,7 @@ const Home = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-serif font-bold text-[#ea8f90] mb-4">
+            <h2 className="text-3xl font-playfair font-bold text-[#800020] mb-4">
               Prenota un Appuntamento
             </h2>
             <div className="w-24 h-1 bg-[#ea8f90] mx-auto mb-8"></div>

@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Colonna 1: Info di contatto */}
           <div>
-            <h3 className="text-lg font-serif font-bold text-[#ea8f90] mb-4">
+            <h3 className="text-lg font-playfair font-bold text-[#800020] mb-4">
               Contatti
             </h3>
             <ul className="space-y-2 text-gray-600">
@@ -28,7 +28,7 @@ const Footer = () => {
 
           {/* Colonna 2: Link rapidi */}
           <div>
-            <h3 className="text-lg font-serif font-bold text-[#ea8f90] mb-4">
+            <h3 className="text-lg font-playfair font-bold text-[#800020] mb-4">
               Link Rapidi
             </h3>
             <ul className="space-y-2">
@@ -53,7 +53,7 @@ const Footer = () => {
 
           {/* Colonna 3: Social */}
           <div>
-            <h3 className="text-lg font-serif font-bold text-[#ea8f90] mb-4">
+            <h3 className="text-lg font-playfair font-bold text-[#800020] mb-4">
               Social
             </h3>
             <div className="flex space-x-4">

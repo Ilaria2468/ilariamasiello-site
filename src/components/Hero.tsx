@@ -13,17 +13,16 @@ const Hero = ({ onScrollToContact }: HeroProps) => {
         backgroundImage: `url('/images/hero.jpg')`
       }}
     >
-      <div className="absolute inset-0 bg-black/30"></div>
       <motion.div 
-        className="relative z-10 text-center text-white px-4"
+        className="relative z-10 text-center px-4"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
+        <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6 text-[#B8860B]">
           Ilaria Masiello
         </h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+        <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-[#B8860B]">
           Trasforma il tuo look con un tocco di professionalità
         </p>
         <button

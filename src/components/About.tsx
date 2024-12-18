@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-[#ea8f90]/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="text-center mb-16"
@@ -12,7 +12,7 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl font-serif font-bold text-[#ea8f90] mb-4">
+          <h2 className="text-3xl font-playfair font-bold text-[#800020] mb-4">
             Chi Sono
           </h2>
           <div className="w-24 h-1 bg-[#ea8f90] mx-auto mb-8"></div>
@@ -26,11 +26,11 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <p className="text-lg text-gray-700 leading-relaxed">
-            Ciao! Sono Ilaria, una professionista appassionata nel mondo del beauty. La mia missione è far sentire ogni persona speciale, creando look che esaltano la bellezza naturale e riflettono la loro unicità.
+            <p className="text-lg font-playfair text-gray-700 leading-relaxed">
+              Ciao! Sono Ilaria, una professionista appassionata nel mondo del beauty. La mia missione è far sentire ogni persona speciale, creando look che esaltano la bellezza naturale e riflettono la loro unicità.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-            Amo combinare creatività, tecnica e attenzione ai dettagli per realizzare trucchi e acconciature che lasciano il segno, perfetti per ogni occasione. Per me, ogni cliente è una storia da raccontare attraverso il suo stile.
+            <p className="text-lg font-playfair text-gray-700 leading-relaxed">
+              Amo combinare creatività, tecnica e attenzione ai dettagli per realizzare trucchi e acconciature che lasciano il segno, perfetti per ogni occasione. Per me, ogni cliente è una storia da raccontare attraverso il suo stile.
             </p>
           </motion.div>
 
@@ -44,7 +44,7 @@ const About = () => {
             {/* Contenitore principale dell'immagine */}
             <div className="relative">
               {/* Immagine principale */}
-              <div className="aspect-[3/4] rounded-lg overflow-hidden shadow-xl">
+              <div className="aspect-[3/4] rounded-lg overflow-hidden shadow-xl max-w-[40%] mx-auto">
                 <img 
                   src="/images/ilariafoto.jpg"
                   alt="Profile"
@@ -53,8 +53,8 @@ const About = () => {
               </div>
               
               {/* Elementi decorativi */}
-              <div className="absolute -bottom-4 -right-4 w-48 h-48 bg-[#ea8f90]/10 rounded-full -z-10"></div>
-              <div className="absolute -top-4 -left-4 w-32 h-32 bg-[#ea8f90]/5 rounded-full -z-10"></div>
+              <div className="absolute -bottom-4 -right-4 w-48 h-48 bg-white/50 rounded-full -z-10"></div>
+              <div className="absolute -top-4 -left-4 w-32 h-32 bg-white/50 rounded-full -z-10"></div>
             </div>
           </motion.div>
         </div>

@@ -47,7 +47,10 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="max-w-2xl mx-auto p-8 bg-white rounded-lg shadow-lg border-2 border-[#ea8f90]/30">
+    <form 
+      onSubmit={handleSubmit(onSubmit)} 
+      className="max-w-2xl mx-auto p-8 bg-white rounded-lg shadow-lg border-2 border-[#ea8f90]/30"
+    >
       <div className="space-y-6">
         {/* Nome */}
         <div>
